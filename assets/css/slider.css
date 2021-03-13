@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+*{
+    font-family: "Montserrat", sans-serif;
+}
+.slider {
+    position: relative;
+    z-index: 1;
+    background-color: #ffffff;
+    overflow: hidden; 
+}
+
+.slider .nav-tabs .nav-item .nav-link.active {
+    background-color: #2b9f9f;
+}
+
+#myTab{
+    border: none;
+}
+.nav-item{
+  margin-right: 2vh;
+}
+.nav-item a{
+  padding: 2vh;
+}
+
+.nav-item a::after{
+  content: "\ea99";
+  font-family: IcoFont;
+  padding-left: 5px;
+}
+
+.slider .nav-tabs .nav-item .nav-link {
+    background-color: #a7a7a5;
+    color: #fff;
+
+    border-radius: 0;
+    border: none; 
+}
+
+.nav-link{
+    cursor: pointer;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    font-weight:bold ;
+    font-size: 15px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 767px) {
+    .slider .nav-tabs .nav-item .nav-link {
+        padding: 0 20px;
+        height: 42px;
+        line-height: 42px;
+        font-size: 12px;
+        border: none;
+    } 
+}
+
+.topografia-slideshow, .rpa-slideshow{
+    position: relative;
+    z-index: 1; 
+    background-color: #54b1b2;
+    margin-top: 1vh;
+}
+
+.single-slide{
+    position: relative;
+    z-index: 1;
+    border-left: 5vh solid #55b2b2;
+}
+.single-slide, .col{
+    margin: 0;
+    padding: 0;
+}
+
+.single-slide h1{
+    position: absolute;
+    color:#fff;
+    font-size: 25vh;
+    font-weight: bolder;
+    top: 30vh;
+    padding: 5vh;
+
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color:#ffff;
+    font-size: 25vh; color: #fffdd900;
+
+}
+
+.single-slide h3{
+    position: absolute;
+    color:#fff;
+    font-size: 20px;
+    font-weight: bold;
+    top: 55vh;
+    padding: 7vh;
+}
+
+@media (max-width: 768px) {
+  .single-slide h3{
+    font-size: 15px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .single-slide h1{
+    font-size: 20vh;
+    top: 25vh;
+  }
+  .single-slide h3{
+    font-size: 15px;
+    top: 45vh;
+  }
+}
+
+.non-img h1{
+    position: absolute;
+    color:#fff;
+    font-size: 25vh;
+    top: -5vh;
+    font-weight: bolder;
+
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color:#ffff;
+    font-size: 25vh; color: #fffdd900;
+
+}
+
+.non-img h3{
+    position: absolute;
+    color:#fff;
+    font-size: 20px;
+    font-weight: bold;
+    top: 20vh;
+}
+
+.non-img p{
+    position: absolute;
+    color:#b0b0b0;
+    font-size: 15px;
+    top: 25vh;
+    padding: 7vh;
+}
+
+
+.topografia-slideshow .owl-prev,.topografia-slideshow .owl-next,.rpa-slideshow .owl-prev,.rpa-slideshow .owl-next {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  top: 50%;
+  margin-top: -30px;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: rgba(13, 13, 13, 0.7);
+  left: 22%;
+  text-align: center;
+  -webkit-transition-duration: 500ms;
+  transition-duration: 500ms;
+  line-height: 60px; 
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .topografia-slideshow .owl-prev,.topografia-slideshow .owl-next,.rpa-slideshow .owl-prev,.rpa-slideshow .owl-next{
+    left: 15%; 
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .topografia-slideshow .owl-prev,.topografia-slideshow .owl-next,.rpa-slideshow .owl-prev,.rpa-slideshow .owl-next{
+    left: 15%; 
+  } 
+}
+@media only screen and (max-width: 767px) {
+  .topografia-slideshow .owl-prev,.topografia-slideshow .owl-next,.rpa-slideshow .owl-prev,.rpa-slideshow .owl-next {
+    left: 5%;
+    width: 40px;
+    height: 40px;
+    margin-top: -20px;
+    line-height: 40px; 
+  }
+}
+.topografia-slideshow .owl-prev:hover,.topografia-slideshow .owl-next:hover,.rpa-slideshow .owl-prev:hover,.rpa-slideshow .owl-next:hover{
+  background-color: #20d8da;
+  color: #ffffff; 
+}
+.topografia-slideshow .owl-next, .rpa-slideshow .owl-next {
+  left: auto;
+  right: 22%; 
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .topografia-slideshow .owl-next,.rpa-slideshow .owl-next{
+    right: 15%; 
+  } 
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .topografia-slideshow .owl-next,.rpa-slideshow .owl-next{
+    right: 15%; 
+  } 
+}
+@media only screen and (max-width: 767px) {
+  .popular-games-slideshow .owl-next, .rpa-slideshow .owl-next{
+    right: 5%; 
+  } 
+}
