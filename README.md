@@ -1,6 +1,6 @@
 # GEO3D - Engenharia de Mapeamneto
 
-Esta Landing-Page, foi desenvolvida para teste de uma agência de desenvolvimeo.
+Esta Landing-Page, foi desenvolvida para teste de uma agência de desenvolvimento.
 
 Tecnologias utilizadas:
   .HTML
